@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Logga in användardata</title>
+</head>
+<body>
+    <h1>Ange användardata</h1>
+    <form action="process.php" method="post">
+        <!-- Artistnamn -->
+        <label for="artistnamn">Artistnamn:</label>
+        <input type="text" name="artistnamn" id="artistnamn" required><br><br>
+
+        <!-- Låtnamn -->
+        <label for="latnamn">Låtnamn:</label>
+        <input type="text" name="latnamn" id="latnamn" required><br><br>
+
+        <!-- Status -->
+        <label for="status">Status:</label>
+        <select name="status" id="status">
+            <option value="Färdig">Färdig</option>
+            <option value="Pågående">Pågående</option>
+        </select><br><br>
+
+        <!-- Arbetsnamn -->
+        <label for="arbetsnamn">Arbetsnamn:</label>
+        <input type="text" name="arbetsnamn" id="arbetsnamn" required><br><br>
+
+        <!-- Tonart -->
+        <label for="tonart">Tonart:</label>
+        <input type="text" name="tonart" id="tonart" required><br><br>
+
+        <!-- Skicka knapp -->
+        <input type="submit" value="Skicka">
+    </form>
+</body>
+</html>
